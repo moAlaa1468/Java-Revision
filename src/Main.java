@@ -20,19 +20,60 @@ public class Main {
 //        int number=scanner.nextInt();
 //        System.out.println(checkGrade(number));
 
-        System.out.println(sumOfTenNumbers());
+//        System.out.println(sumOfTenNumbers());
+
+        taskToDo(userInput());
+
+    }
+
+    /*
+    * Just we need to make function to take input from use
+    * */
+
+    public static int userInput(){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Please enter you number");
+        int number= scanner.nextInt();
+        return number;
+    }
+
+
+/*
+* Write a program that asks the user to enter a number from 1 to 7,
+* representing the days of the week (1 for Monday, 2 for Tuesday, etc.).
+*  Use a ‘switch’ statement to print out a task to complete on that day of the week.
+* For example, if the user enters 1, the program might print “Go to the gym.”
+* */
+
+    public static void taskToDo(int number){
+        switch (number){
+            case 1:
+                System.out.println("Go to work ");
+                break;
+            case 2:
+                System.out.println("Got to Club");
+                break;
+            case 3:
+                System.out.println("Go to work ");
+                break;
+            case 4:
+                System.out.println("Go to Home ");
+                break;
+            default:
+                System.out.println("Go to Gym");
+        }
 
     }
 
 
-    
     /*
      * Sum of Numbers: Create a program that calculates the sum of all numbers from 1 to 100 using a ‘for’ loop
      * */
     public static int sumOfTenNumbers() {
+        // You have to look for Three parts initialization condition and updateStatement
         int sum = 0;
         for (int i = 0; i < 100; i++) {
-        sum+=i;
+            sum += i;
         }
         return sum;
     }
