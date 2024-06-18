@@ -33,6 +33,7 @@ public class Main {
 
     /*
      * we need to make function to git number of month
+     * How to return the number of days in the month
      * */
 
     public static int days(int month, int year) {
@@ -51,13 +52,17 @@ public class Main {
             case 6:
             case 9:
             case 11:
-                daysCount = 29;
+                daysCount = 30;
+                break;
             case 2:
                 if (year % 4 == 0) {
                     daysCount = 29;
                 } else {
                     daysCount = 28;
                 }
+                break;
+            default:
+                daysCount=0;
                 break;
         }
         return daysCount;
