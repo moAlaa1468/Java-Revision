@@ -22,31 +22,68 @@ public class Main {
 
 //        System.out.println(sumOfTenNumbers());
 
-        taskToDo(userInput());
+//        taskToDo(userInput());
 
+        System.out.println(days(2,2040));
+    }
+
+
+
+
+
+    /*
+     * we need to make function to git number of month
+     * */
+
+    public static int days(int month, int year) {
+        int daysCount = 0;
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                daysCount = 31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                daysCount = 29;
+            case 2:
+                if (year % 4 == 0) {
+                    daysCount = 29;
+                } else {
+                    daysCount = 28;
+                }
+                break;
+        }
+        return daysCount;
     }
 
     /*
-    * Just we need to make function to take input from use
-    * */
+     * Just we need to make function to take input from use
+     * */
 
-    public static int userInput(){
-        Scanner scanner=new Scanner(System.in);
+    public static int userInput() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter you number");
-        int number= scanner.nextInt();
+        int number = scanner.nextInt();
         return number;
     }
 
 
-/*
-* Write a program that asks the user to enter a number from 1 to 7,
-* representing the days of the week (1 for Monday, 2 for Tuesday, etc.).
-*  Use a ‘switch’ statement to print out a task to complete on that day of the week.
-* For example, if the user enters 1, the program might print “Go to the gym.”
-* */
+    /*
+     * Write a program that asks the user to enter a number from 1 to 7,
+     * representing the days of the week (1 for Monday, 2 for Tuesday, etc.).
+     *  Use a ‘switch’ statement to print out a task to complete on that day of the week.
+     * For example, if the user enters 1, the program might print “Go to the gym.”
+     * */
 
-    public static void taskToDo(int number){
-        switch (number){
+    public static void taskToDo(int number) {
+        switch (number) {
             case 1:
                 System.out.println("Go to work ");
                 break;
