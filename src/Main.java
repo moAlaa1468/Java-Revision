@@ -1,3 +1,4 @@
+import javax.swing.text.html.parser.TagElement;
 import java.util.Scanner;
 
 public class Main {
@@ -32,8 +33,121 @@ public class Main {
 //        int[] arrayTwo = {20, 30, 70, 60};
 //        System.out.println("The max nkmber of the array is : " + getMax(arrayTwo));
 //    }
+// int[] numbers={22,33,44,55,10,20,20,33,22};
+//      int[]result=  getDistinctValues(numbers);
+//        System.out.println(result);
+//        System.out.println(numbers.length);
+//        int[] distinct=new int[numbers.length];
+//        int index=0;
+//        for (int i = 0; i < numbers.length; i++) {
+//            distinct[index]=numbers[i];
+//            index++;
+//        }
+//        for (int i = 0; i < distinct.length; i++) {
+//            System.out.println(distinct[i]);
+//        }
+        int[] numbers = {22, 33, 44, 55, 10, 20, 20, 33, 22};
+
+        int[] result = getDistinctValues(numbers);
+        for (int i = 0; i < result.length; i++) {
+            if (result[i] != 0) {
+                System.out.print(result[i] + "   ");
+            }
+        }
+
+        System.out.println();
+        int[] reverseArray = reverseArray(numbers);
+        for (int i = 0; i < reverseArray.length; i++) {
+            System.out.print(reverseArray[i] + "   ");
+
+        }
+
+        System.out.println();
+        int targetElement = getTargetIndex(numbers, 55);
+        System.out.println("Index of the target element is : "+targetElement);
+
+        boolean found = isFound(numbers, 55);
+        System.out.println(found);
+
     }
 
+
+    /*
+     * Making function to get the reverseArray
+     * */
+
+    public static int[] reverseArray(int[] array) {
+        int[] newArray = new int[array.length];
+        int index = 0;
+        for (int i = array.length - 1; i > 0; i--) {
+            newArray[index] = array[i];
+            index++;
+        }
+        return newArray;
+    }
+
+
+    /*
+     * Making function to get the Target Index From the Array
+     *
+     * */
+    public static int getTargetIndex(int[] array, int TargetNumber) {
+        int index = 0;
+        for (int i = 0; i < array.length; i++) {
+            if(TargetNumber == array[i]){
+             index= i;
+             break;
+            }
+        }
+
+       return index;
+    }
+
+    /*
+     * We will see if the element exists in the array or Not
+     *
+     * */
+    public static boolean isFound(int[] array, int number) {
+        boolean found = false;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == number) {
+                found = true;
+                break;
+            } else {
+                found = false;
+            }
+        }
+        return found;
+    }
+
+    /*
+     * We will make function to get the distinctValues From the array
+     *
+     * */
+    public static int[] getDistinctValues(int[] array) {
+        //This will require Two for loops uaAmer 
+        int[] distinctNumbers = new int[array.length];
+        int index = 0;
+        int temp = 0;
+        for (int i = 0; i < array.length; i++) {
+            boolean isDistinct = true;
+            for (int j = 0; j < i; j++) {
+                if (array[i] == array[j]) {
+                    isDistinct = false;
+                    break;
+                }
+            }
+            if (isDistinct == true) {
+                distinctNumbers[index] = array[i];
+                index++;
+            }
+        }
+
+
+        return distinctNumbers;
+    }
+
+    //--------------------------------------------------------
 
     /*
      * making function to return the biggest value of the array */
