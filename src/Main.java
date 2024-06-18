@@ -24,9 +24,44 @@ public class Main {
 
 //        taskToDo(userInput());
 
-        System.out.println(days(2,2040));
+//        System.out.println(days(2, 2040));
+
+        divideNumbers(894378242);
     }
 
+
+
+/*
+* Simple function of using while Loop ==>
+* You have three part to look for initialization condition update Statement
+* it's used when you don't know when the condition will over or End
+* 89437824
+8943782
+894378
+89437
+8943
+894
+89
+8
+0
+* */
+    //872
+
+/*
+* This method used to print the reverse of the number 
+* */
+    public static void divideNumbers(int number){
+        int counter=0;
+        int temp;
+        while(number>0){
+            temp=number%10;
+            System.out.print(temp);
+            number=number/10;
+            counter++;
+        }
+        System.out.println("The number of division uaAmer is : ");
+        System.out.println(counter);
+            }
 
 
 
@@ -62,7 +97,7 @@ public class Main {
                 }
                 break;
             default:
-                daysCount=0;
+                daysCount = 0;
                 break;
         }
         return daysCount;
