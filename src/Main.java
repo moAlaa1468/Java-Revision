@@ -26,7 +26,7 @@ public class Main {
 
 //        System.out.println(days(2, 2040));
 
-        divideNumbers(894378242);
+        divideNumbers(423563);
     }
 
 
@@ -48,19 +48,22 @@ public class Main {
     //872
 
 /*
-* This method used to print the reverse of the number 
+* This method used to print the reverse of the number
 * */
     public static void divideNumbers(int number){
         int counter=0;
         int temp;
+        int sum=0;
         while(number>0){
             temp=number%10;
             System.out.print(temp);
+            sum+=temp;
             number=number/10;
             counter++;
         }
         System.out.println("The number of division uaAmer is : ");
         System.out.println(counter);
+        System.out.println("The sum of all numbers is : "+ sum);
             }
 
 
