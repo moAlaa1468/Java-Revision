@@ -27,20 +27,21 @@ public class Main {
 //        System.out.println(days(2, 2040));
 
 //        divideNumbers(423563);
-        int[] array={2,35,2,44,664,23,10};
-        System.out.println("The summation of the arrya is : "+  sumOfArray(array));
-   int[] arrayTwo={20,30,70,60};
-        System.out.println("The max nkmber of the array is : "+ getMax(arrayTwo));    }
-
+//        int[] array = {2, 35, 2, 44, 664, 23, 10};
+//        System.out.println("The summation of the arrya is : " + sumOfArray(array));
+//        int[] arrayTwo = {20, 30, 70, 60};
+//        System.out.println("The max nkmber of the array is : " + getMax(arrayTwo));
+//    }
+    }
 
 
     /*
-    * making function to return the biggest value of the array */
-    public static int getMax(int[] array){
-        int temp=0;
+     * making function to return the biggest value of the array */
+    public static int getMax(int[] array) {
+        int temp = 0;
         for (int i = 0; i < array.length; i++) {
-            if(array[i]>temp){
-                temp=array[i];
+            if (array[i] > temp) {
+                temp = array[i];
             }
         }
         return temp;
@@ -48,11 +49,11 @@ public class Main {
 
 
     /*
-    * making function to get the summation of the array */
-    public static int sumOfArray(int[] array){
-        int sum=0;
+     * making function to get the summation of the array */
+    public static int sumOfArray(int[] array) {
+        int sum = 0;
         for (int i = 0; i < array.length; i++) {
-            sum+=array[i];
+            sum += array[i];
         }
         return sum;
     }
@@ -73,24 +74,24 @@ public class Main {
 * */
     //872
 
-/*
-* This method used to print the reverse of the number
-* */
-    public static void divideNumbers(int number){
-        int counter=0;
+    /*
+     * This method used to print the reverse of the number
+     * */
+    public static void divideNumbers(int number) {
+        int counter = 0;
         int temp;
-        int sum=0;
-        while(number>0){
-            temp=number%10;
+        int sum = 0;
+        while (number > 0) {
+            temp = number % 10;
             System.out.print(temp);
-            sum+=temp;
-            number=number/10;
+            sum += temp;
+            number = number / 10;
             counter++;
         }
         System.out.println("The number of division uaAmer is : ");
         System.out.println(counter);
-        System.out.println("The sum of all numbers is : "+ sum);
-            }
+        System.out.println("The sum of all numbers is : " + sum);
+    }
 
 
 
