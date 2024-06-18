@@ -13,44 +13,56 @@ public class Main {
 //        System.out.println("===========================");
 //        System.out.println("Ctrl + Shift + /  ==> used to make multiple line comment");
 //
+//
+//        System.out.println(comparison(90,323));
+//        Scanner scanner=new Scanner(System.in);
+//        System.out.println("Enter your number");
+//        int number=scanner.nextInt();
+//        System.out.println(checkGrade(number));
 
-        System.out.println(comparison(90,323));
-
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Enter your number");
-        int number=scanner.nextInt();
-        System.out.println(checkGrade(number));
-
+        System.out.println(sumOfTenNumbers());
 
     }
 
 
+    
+    /*
+     * Sum of Numbers: Create a program that calculates the sum of all numbers from 1 to 100 using a ‘for’ loop
+     * */
+    public static int sumOfTenNumbers() {
+        int sum = 0;
+        for (int i = 0; i < 100; i++) {
+        sum+=i;
+        }
+        return sum;
+    }
 
-
-    public static int comparison(int first,int second){
-        if(first>second){
+    public static int comparison(int first, int second) {
+        if (first > second) {
             return first;
-        }else
+        } else
             return second;
     }
 
-/*
-// Task
-Grading System: Create a grading system where the user inputs a score, and the program outputs the grade (A, B, C, D, F) using ‘else if’ statements.
-* Grading System: Create a grading
-* system where the user inputs a score, and the program outputs the grade (A, B, C, D, F) using ‘else if’ statements.
-* */
-public static String checkGrade(int grade){
-    if(grade == 90){
-        return "A";
-    }else if (grade==80){
-        return "B";
-    }else if (grade == 70){
-        return "C";
-    }else if (grade == 60){
-        return "D";
-    }else {
-        return "F";
+    /*
+    // Task
+    Grading System: Create a grading system where the user inputs a score, and the program outputs the grade (A, B, C, D, F) using ‘else if’ statements.
+    * Grading System: Create a grading
+    * system where the user inputs a score, and the program outputs the grade (A, B, C, D, F) using ‘else if’ statements.
+    * */
+    public static String checkGrade(int grade) {
+        if (grade == 90) {
+            return "A";
+        } else if (grade == 80) {
+            return "B";
+        } else if (grade == 70) {
+            return "C";
+        } else if (grade == 60) {
+            return "D";
+        } else {
+            return "F";
+        }
     }
-}
+
+
 }
