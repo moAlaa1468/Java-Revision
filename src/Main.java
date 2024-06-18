@@ -1,11 +1,16 @@
-public class Main{
-    public static void main(String[] args){
-    int firstNumber=20;
-    int secondNumber=30;
-    //This is the operator Overloading
-        // left precedence 
-        System.out.println(firstNumber+secondNumber ); //adding Not Casting to String
-        System.out.println("Sum is : "+firstNumber + secondNumber); //this will casting to String
-        System.out.println(firstNumber+secondNumber + "<= Sum"); // This will add then casting String
+public class Main {
+    public static void main(String[] args) {
+
+        System.out.println("Ctrl + D");
+        System.out.println("This will take a copy of the line down");
+        System.out.println("=======================");
+        System.out.println("Ctrl + Alt + Shift + up Arrow");
+        System.out.println("This will move the line up or down");
+        System.out.println("============================");
+        System.out.println("How to format Your code in intellij");
+        System.out.println("Ctrl + Alt + L ");
+        System.out.println("===========================");
+        
+
     }
 }
