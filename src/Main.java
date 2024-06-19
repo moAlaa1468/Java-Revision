@@ -70,14 +70,39 @@ public class Main {
 //        System.out.println(found);
 
 
-        int[] numbers = {0, 29, 0, 22, 0, 44, 22, 10, 20, 20, 33, 22};
-        int[] result = distinct(numbers);
+        int[] numbers = { 29, 22, 0, 44, 22, 10, 20, 20, 33, 22};
+        int[] result = distinctTwo(numbers);
         for (int i = 0; i < result.length; i++) {
             System.out.print("  " + result[i]);
         }
 
     }
 
+    /*
+    * This is another solution for adding zero to the array if exists
+    *
+    * */
+    public static int[] distinctTwo(int[] array) {
+        int[] result = new int[array.length];
+        int amerIndex = 0;
+        boolean flag=true;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0 && flag == true) {
+                result[amerIndex] = array[i];
+                amerIndex++;
+                flag = false;
+            }
+            if (!isFound(result, array[i])) {
+
+                {
+                    result[amerIndex] = array[i];
+                    amerIndex++;
+
+                }
+            }
+        }
+        return sliceArray(result, amerIndex);
+    }
 
     /*
      * This method is used to get the distinct Values
@@ -94,7 +119,6 @@ public class Main {
             }
         }
         return sliceArray(result, amerIndex);
-
     }
 
     /*
@@ -147,13 +171,11 @@ public class Main {
         boolean found = false;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == number) {
-                found = true;
-                break;
-            } else {
-                found = false;
+                return true;
             }
+
         }
-        return found;
+        return false;
     }
 
     /*
@@ -338,8 +360,7 @@ public class Main {
     public static int comparison(int first, int second) {
         if (first > second) {
             return first;
-        } else
-            return second;
+        } else return second;
     }
 
     /*
