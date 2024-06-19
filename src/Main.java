@@ -46,29 +46,67 @@ public class Main {
 //        for (int i = 0; i < distinct.length; i++) {
 //            System.out.println(distinct[i]);
 //        }
-        int[] numbers = {22, 33, 44, 55, 10, 20, 20, 33, 22};
+//        int[] numbers = {22, 33, 44, 55, 10, 20, 20, 33, 22};
+//
+//        int[] result = getDistinctValues(numbers);
+//        for (int i = 0; i < result.length; i++) {
+//            if (result[i] != 0) {
+//                System.out.print(result[i] + "   ");
+//            }
+//        }
+//
+//        System.out.println();
+//        int[] reverseArray = reverseArray(numbers);
+//        for (int i = 0; i < reverseArray.length; i++) {
+//            System.out.print(reverseArray[i] + "   ");
+//
+//        }
+//
+//        System.out.println();
+//        int targetElement = getTargetIndex(numbers, 55);
+//        System.out.println("Index of the target element is : "+targetElement);
+//
+//        boolean found = isFound(numbers, 55);
+//        System.out.println(found);
 
-        int[] result = getDistinctValues(numbers);
+
+        int[] numbers = {0,29,0,22, 0, 44, 22, 10, 20, 20, 33, 22};
+        int[] result = distinct(numbers);
         for (int i = 0; i < result.length; i++) {
-            if (result[i] != 0) {
-                System.out.print(result[i] + "   ");
+            System.out.print("  " + result[i]);
+        }
+
+    }
+
+
+    /*
+     * This method is used to get the distinct Values
+     *                                       //0,1,2,3,4,5     0 1 2
+     * */                                   //4,0,30,0,10,0    4 0 30
+    public static int[] distinct(int[] numbers) {
+        int[] result = new int[numbers.length];
+        int amerIndex = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            int outIndex = getTargetIndex(result, numbers[i]);
+            if (outIndex == -1 || outIndex == i) {
+                result[amerIndex] = numbers[i];
+                amerIndex++;
             }
         }
+      return  sliceArray(result,amerIndex);
 
-        System.out.println();
-        int[] reverseArray = reverseArray(numbers);
-        for (int i = 0; i < reverseArray.length; i++) {
-            System.out.print(reverseArray[i] + "   ");
+    }
 
+    /*
+     * we need to make function to sliceArray
+     * */
+
+    public static int[] sliceArray(int[] array, int size) {
+        int[] trimmedArray = new int[size];
+        for (int i = 0; i < size; i++) {
+            trimmedArray[i] = array[i];
         }
-
-        System.out.println();
-        int targetElement = getTargetIndex(numbers, 55);
-        System.out.println("Index of the target element is : "+targetElement);
-
-        boolean found = isFound(numbers, 55);
-        System.out.println(found);
-
+        return trimmedArray;
     }
 
 
@@ -92,15 +130,13 @@ public class Main {
      *
      * */
     public static int getTargetIndex(int[] array, int TargetNumber) {
-        int index = 0;
         for (int i = 0; i < array.length; i++) {
-            if(TargetNumber == array[i]){
-             index= i;
-             break;
+            if (TargetNumber == array[i]) {
+                return i;
             }
         }
 
-       return index;
+        return -1;
     }
 
     /*
