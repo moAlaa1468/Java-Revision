@@ -72,10 +72,8 @@ package amer.alaa.mohamed.package1;
 //        }
 
 
-import amer.alaa.mohamed.package2.ArrayEngine;
-import amer.alaa.mohamed.package2.GeometryEngine;
-import amer.alaa.mohamed.package2.Rectangle;
-import amer.alaa.mohamed.package2.Second;
+import amer.alaa.mohamed.package2.*;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -102,6 +100,12 @@ public class Main {
         double areaOfRectangle = r2.area();
         System.out.println("Your Rectangle area is :");
         System.out.println(areaOfRectangle);
+        /*
+         * we need to take object from Rectangle and calculate the area and perimeters
+         * */
+        Triangle triangle=new Triangle(2,3,5);
+        triangle.setAngleBetween1And2(Math.toDegrees(20));
+        System.out.println( triangle.calculateArea(2,29));
 
     }
 
