@@ -70,7 +70,7 @@ public class Main {
 //        System.out.println(found);
 
 
-        int[] numbers = {0,29,0,22, 0, 44, 22, 10, 20, 20, 33, 22};
+        int[] numbers = {0, 29, 0, 22, 0, 44, 22, 10, 20, 20, 33, 22};
         int[] result = distinct(numbers);
         for (int i = 0; i < result.length; i++) {
             System.out.print("  " + result[i]);
@@ -93,7 +93,7 @@ public class Main {
                 amerIndex++;
             }
         }
-      return  sliceArray(result,amerIndex);
+        return sliceArray(result, amerIndex);
 
     }
 
