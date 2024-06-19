@@ -1,13 +1,14 @@
+package amer.alaa.mohamed.package2;
+
 import java.util.Scanner;
 
-public class ArrayEngine {
-
+ public class ArrayEngine {
 
     /*
      * This is another solution for adding zero to the array if exists
-     *- There are alot of solutions to solve this task uaAlaa You need to f
+     *- There are a lot of solutions to solve this task uaAlaa You need to f
      * */
-    public static int[] distinctTwo(int[] array) {
+    public  int[] distinctTwo(int[] array) {
         int[] result = new int[array.length];
         int amerIndex = 0;
         boolean flag=true;
@@ -33,7 +34,7 @@ public class ArrayEngine {
      * This method is used to get the distinct Values
      *                                       //0,1,2,3,4,5     0 1 2
      * */                                   //4,0,30,0,10,0    4 0 30
-    public static int[] distinct(int[] numbers) {
+    public  int[] distinct(int[] numbers) {
         int[] result = new int[numbers.length];
         int amerIndex = 0;
         for (int i = 0; i < numbers.length; i++) {
@@ -50,7 +51,7 @@ public class ArrayEngine {
      * we need to make function to sliceArray
      * */
 
-    public static int[] sliceArray(int[] array, int size) {
+    public  int[] sliceArray(int[] array, int size) {
         int[] trimmedArray = new int[size];
         for (int i = 0; i < size; i++) {
             trimmedArray[i] = array[i];
@@ -63,7 +64,7 @@ public class ArrayEngine {
      * Making function to get the reverseArray
      * */
 
-    public static int[] reverseArray(int[] array) {
+    public  int[] reverseArray(int[] array) {
         int[] newArray = new int[array.length];
         int index = 0;
         for (int i = array.length - 1; i > 0; i--) {
@@ -78,7 +79,7 @@ public class ArrayEngine {
      * Making function to get the Target Index From the Array
      *
      * */
-    public static int getTargetIndex(int[] array, int TargetNumber) {
+    public  int getTargetIndex(int[] array, int TargetNumber) {
         for (int i = 0; i < array.length; i++) {
             if (TargetNumber == array[i]) {
                 return i;
@@ -92,7 +93,7 @@ public class ArrayEngine {
      * We will see if the element exists in the array or Not
      *
      * */
-    public static boolean isFound(int[] array, int number) {
+    public  boolean isFound(int[] array, int number) {
         boolean found = false;
         for (int i = 0; i < array.length; i++) {
             if (array[i] == number) {
@@ -107,7 +108,7 @@ public class ArrayEngine {
      * We will make function to get the distinctValues From the array
      *
      * */
-    public static int[] getDistinctValues(int[] array) {
+    public  int[] getDistinctValues(int[] array) {
         //This will require Two for loops uaAmer
         int[] distinctNumbers = new int[array.length];
         int index = 0;
@@ -134,7 +135,7 @@ public class ArrayEngine {
 
     /*
      * making function to return the biggest value of the array */
-    public static int getMax(int[] array) {
+    public  int getMax(int[] array) {
         int temp = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > temp) {
@@ -147,7 +148,7 @@ public class ArrayEngine {
 
     /*
      * making function to get the summation of the array */
-    public static int sumOfArray(int[] array) {
+    public  int sumOfArray(int[] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
@@ -174,7 +175,7 @@ public class ArrayEngine {
     /*
      * This method used to print the reverse of the number
      * */
-    public static void divideNumbers(int number) {
+    public  void divideNumbers(int number) {
         int counter = 0;
         int temp;
         int sum = 0;
@@ -198,7 +199,7 @@ public class ArrayEngine {
      * How to return the number of days in the month
      * */
 
-    public static int days(int month, int year) {
+    public  int days(int month, int year) {
         int daysCount = 0;
         switch (month) {
             case 1:
@@ -234,7 +235,7 @@ public class ArrayEngine {
      * Just we need to make function to take input from use
      * */
 
-    public static int userInput() {
+    public  int userInput() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter you number");
         int number = scanner.nextInt();
@@ -249,7 +250,7 @@ public class ArrayEngine {
      * For example, if the user enters 1, the program might print “Go to the gym.”
      * */
 
-    public static void taskToDo(int number) {
+    public  void taskToDo(int number) {
         switch (number) {
             case 1:
                 System.out.println("Go to work ");
@@ -273,7 +274,7 @@ public class ArrayEngine {
     /*
      * Sum of Numbers: Create a program that calculates the sum of all numbers from 1 to 100 using a ‘for’ loop
      * */
-    public static int sumOfTenNumbers() {
+    public  int sumOfTenNumbers() {
         // You have to look for Three parts initialization condition and updateStatement
         int sum = 0;
         for (int i = 0; i < 100; i++) {
@@ -282,7 +283,7 @@ public class ArrayEngine {
         return sum;
     }
 
-    public static int comparison(int first, int second) {
+    public  int comparison(int first, int second) {
         if (first > second) {
             return first;
         } else return second;
@@ -294,7 +295,7 @@ public class ArrayEngine {
     * Grading System: Create a grading
     * system where the user inputs a score, and the program outputs the grade (A, B, C, D, F) using ‘else if’ statements.
     * */
-    public static String checkGrade(int grade) {
+    public  String checkGrade(int grade) {
         if (grade == 90) {
             return "A";
         } else if (grade == 80) {

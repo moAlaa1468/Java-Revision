@@ -1,4 +1,4 @@
-
+package amer.alaa.mohamed.package1;
 //        System.out.println("Ctrl + D");
 //        System.out.println("This will take a copy of the line down");
 //        System.out.println("=======================");
@@ -72,15 +72,25 @@
 //        }
 
 
-
-
-import javax.swing.text.html.parser.TagElement;
-import java.util.Scanner;
+import amer.alaa.mohamed.package2.ArrayEngine;
+import amer.alaa.mohamed.package2.GeometryEngine;
+import amer.alaa.mohamed.package2.Rectangle;
+import amer.alaa.mohamed.package2.Second;
 
 public class Main {
     public static void main(String[] args) {
+        Second second = new Second();
+        System.out.println(second.toString());
+        GeometryEngine geometryEngine = new GeometryEngine();
+        double area = geometryEngine.calculateRectangleArea(10, 20);
+        System.out.println(area);
 
+        Rectangle rectangle = new Rectangle(10, 20);
+        double result = geometryEngine.calculateRectangleArea(rectangle.getWidth(), rectangle.getLength());
+        System.out.println(result);
 
+        double area1 = geometryEngine.calculateRectangleArea(new Rectangle(99, 20));
+        System.out.println(area1);
 
     }
 
