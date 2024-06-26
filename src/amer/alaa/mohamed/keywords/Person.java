@@ -4,7 +4,7 @@ public class Person {
     private static int counter;
 
     public Person(){
-        counter++;
+        counter++; // This is used to count all objects That are taken from this object uaAlaa
     }
 
     public static void testStatic() {
