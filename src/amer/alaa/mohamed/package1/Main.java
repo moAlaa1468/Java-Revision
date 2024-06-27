@@ -72,6 +72,7 @@ package amer.alaa.mohamed.package1;
 //        }
 
 
+<<<<<<< HEAD
 import amer.alaa.mohamed.keywords.Person;
 import amer.alaa.mohamed.package2.*;
 import amer.alaa.mohamed.polymorphism.Circle;
@@ -140,6 +141,27 @@ public class Main {
             amer.alaa.mohamed.polymorphism.Triangle@b4c966a
         *
         * */
+=======
+import amer.alaa.mohamed.package2.ArrayEngine;
+import amer.alaa.mohamed.package2.GeometryEngine;
+import amer.alaa.mohamed.package2.Rectangle;
+import amer.alaa.mohamed.package2.Second;
+
+public class Main {
+    public static void main(String[] args) {
+        Second second = new Second();
+        System.out.println(second.toString());
+        GeometryEngine geometryEngine = new GeometryEngine();
+        double area = geometryEngine.calculateRectangleArea(10, 20);
+        System.out.println(area);
+
+        Rectangle rectangle = new Rectangle(10, 20);
+        double result = geometryEngine.calculateRectangleArea(rectangle.getWidth(), rectangle.getLength());
+        System.out.println(result);
+
+        double area1 = geometryEngine.calculateRectangleArea(new Rectangle(99, 20));
+        System.out.println(area1);
+>>>>>>> 559db59c289d34dcc7bd751c1ee9da4b91511721
 
     }
 }

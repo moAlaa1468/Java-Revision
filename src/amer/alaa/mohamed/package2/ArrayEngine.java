@@ -1,5 +1,11 @@
 package amer.alaa.mohamed.package2;
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+
+import java.util.Scanner;
+
+>>>>>>> 559db59c289d34dcc7bd751c1ee9da4b91511721
  public class ArrayEngine {
 
     /*
