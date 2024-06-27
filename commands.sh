@@ -1,3 +1,3 @@
 git add .
-git commit -m "new Commit"
-git push origin main
+git commit -m " Mohamed Alaa new Commit"
+git push -u RemoteConn master
