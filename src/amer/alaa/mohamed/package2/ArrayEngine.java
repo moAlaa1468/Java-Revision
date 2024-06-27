@@ -1,7 +1,5 @@
 package amer.alaa.mohamed.package2;
-
 import java.util.Scanner;
-
  public class ArrayEngine {
 
     /*

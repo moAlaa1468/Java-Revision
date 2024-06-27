@@ -72,41 +72,74 @@ package amer.alaa.mohamed.package1;
 //        }
 
 
+import amer.alaa.mohamed.keywords.Person;
 import amer.alaa.mohamed.package2.*;
+import amer.alaa.mohamed.polymorphism.Circle;
+import amer.alaa.mohamed.polymorphism.Rectangle;
+import amer.alaa.mohamed.polymorphism.Shape;
+import amer.alaa.mohamed.polymorphism.Triangle;
 
 
 public class Main {
     public static void main(String[] args) {
-        Second second = new Second();
-        System.out.println(second.toString());
-        GeometryEngine geometryEngine = new GeometryEngine();
-        double area = geometryEngine.calculateRectangleArea(10, 20);
-        System.out.println(area);
+//        Second second = new Second();
+//        System.out.println(second.toString());
+//        GeometryEngine geometryEngine = new GeometryEngine();
+//        double area = geometryEngine.calculateRectangleArea(10, 20);
+//        System.out.println(area);
+//
+//        Rectangle rectangle = new Rectangle(10, 20);
+//        double result = geometryEngine.calculateRectangleArea(rectangle.getWidth(), rectangle.getLength());
+//        System.out.println(result);
+//
+//        double area1 = geometryEngine.calculateRectangleArea(new Rectangle(99, 20));
+//        System.out.println(area1);
+//
+//
+//
+//        /*
+//         * we need to use copy constructor uaAlaa
+//         * */
+//
+//        Rectangle r1 = new Rectangle(90, 2);
+//        //use copy constructor to copy the values in the r1 to r2)
+//        Rectangle r2 = new Rectangle(r1);
+//        double areaOfRectangle = r2.area();
+//        System.out.println("Your Rectangle area is :");
+//        System.out.println(areaOfRectangle);
+//)
+//         * we need to take object from Rectangle and calculate the area and perimeters
+//         * */
+//        Triangle triangle=new Triangle(2,3,5);
+//        triangle.setAngleBetween1And2(Math.toDegrees(20));
+//        System.out.println( triangle.calculateArea(2,29));
 
-        Rectangle rectangle = new Rectangle(10, 20);
-        double result = geometryEngine.calculateRectangleArea(rectangle.getWidth(), rectangle.getLength());
-        System.out.println(result);
+        Person.testStatic(); //This is calling of the static function uaAmer
+        Person person = new Person();
+        person.testStatic();  // so you could call the static methods via references
 
-        double area1 = geometryEngine.calculateRectangleArea(new Rectangle(99, 20));
-        System.out.println(area1);
+        person.print(); // Hint this is a static function
+        Person person1 = new Person();
+        System.out.println(Person.getCounter());
+        //--------------------------  Here is the concept of polymorphism -------------------
+        //Here we need to apply the polymorphism concept uaAlaa
+        Shape[] arrayOfObejcts = new Shape[3];
+        arrayOfObejcts[0] = new Rectangle();
+        arrayOfObejcts[1] = new Circle();
+        arrayOfObejcts[2] = new Triangle();
 
+        System.out.println(arrayOfObejcts);
+        for (int i = 0; i < arrayOfObejcts.length; i++) {
+            System.out.println(arrayOfObejcts[i]);
+        }
         /*
-         * we need to use copy constructor uaAlaa
-         * */
-
-        Rectangle r1 = new Rectangle(90, 2);
-        //use copy constructor to copy the values in the r1 to r2
-        Rectangle r2 = new Rectangle(r1);
-        double areaOfRectangle = r2.area();
-        System.out.println("Your Rectangle area is :");
-        System.out.println(areaOfRectangle);
-        /*
-         * we need to take object from Rectangle and calculate the area and perimeters
-         * */
-        Triangle triangle=new Triangle(2,3,5);
-        triangle.setAngleBetween1And2(Math.toDegrees(20));
-        System.out.println( triangle.calculateArea(2,29));
+            --------- This the output of this loop -----------------
+        * [Lamer.alaa.mohamed.polymorphism.Shape;@6f496d9f
+            amer.alaa.mohamed.polymorphism.Rectangle@723279cf
+            amer.alaa.mohamed.polymorphism.Circle@10f87f48
+            amer.alaa.mohamed.polymorphism.Triangle@b4c966a
+        *
+        * */
 
     }
-
 }

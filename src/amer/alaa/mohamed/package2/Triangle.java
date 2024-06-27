@@ -1,6 +1,6 @@
 package amer.alaa.mohamed.package2;
 
-public class Triangle {
+public class Triangle extends Shape {
     private double sideOne;
     private double sideTwo;
     private double sideThree;
@@ -104,7 +104,8 @@ public class Triangle {
         return 0.5 * sideOne * sideOne * Math.sin(anyAngle);
     }
 
-    public double calculateArea(double sideOne, double sideTwo, double sideThree, double angleBetweenSmallestSides) {
+    public double calculateArea(double sideOne, double sideTwo, double sideThree,
+                                double angleBetweenSmallestSides) {
         /*
          * If three sides are different from each others
          * */
@@ -127,7 +128,6 @@ public class Triangle {
 
     }
 
-
     //these methods for finding any triangle perimeter
     public double calculatePerimeter(double sideOne) {
         return sideOne + sideOne + sideOne;
@@ -142,4 +142,4 @@ public class Triangle {
     }
 
 
-}
+} //This is the end of the class

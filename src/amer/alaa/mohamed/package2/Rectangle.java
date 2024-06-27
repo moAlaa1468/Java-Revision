@@ -6,7 +6,7 @@ import org.w3c.dom.css.Rect;
 * is just overloading for another developers who will use the your created class
 * */
 
-public class Rectangle {
+public class Rectangle extends Shape{
     private double length;
     private double width;
 
@@ -62,4 +62,5 @@ public class Rectangle {
     {
         return (this.length * this.width);
     }
+
 }

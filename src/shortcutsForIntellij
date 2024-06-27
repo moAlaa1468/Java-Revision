@@ -1,0 +1,87 @@
+Here is a list of some of the most important and frequently used shortcuts for IntelliJ IDEA:
+
+### Basic Navigation
+- **Double Shift**: Search Everywhere
+- **Ctrl + N** (Cmd + O on macOS): Find Class
+- **Ctrl + Shift + N** (Cmd + Shift + O on macOS): Find File
+- **Ctrl + Shift + Alt + N** (Cmd + Shift + Alt + O on macOS): Find Symbol
+- **Alt + Right/Left Arrow** (Ctrl + Right/Left Arrow on macOS): Navigate to Next/Previous Editor Tab
+
+### Code Editing
+- **Ctrl + Space** (Cmd + Space on macOS): Basic Code Completion
+- **Ctrl + Shift + Space** (Cmd + Shift + Space on macOS): Smart Code Completion
+- **Ctrl + /** (Cmd + / on macOS): Comment/Uncomment Line
+- **Ctrl + Shift + /** (Cmd + Shift + / on macOS): Comment/Uncomment Block
+- **Ctrl + Y** (Cmd + Delete on macOS): Delete Line
+- **Ctrl + D** (Cmd + D on macOS): Duplicate Line or Block
+- **Ctrl + Shift + Up/Down** (Cmd + Shift + Up/Down on macOS): Move Line Up/Down
+- **Ctrl + Alt + L** (Cmd + Option + L on macOS): Reformat Code
+- **Ctrl + Shift + J** (Cmd + Shift + J on macOS): Join Lines
+
+### Refactoring
+- **Ctrl + Alt + Shift + T** (Cmd + Shift + T on macOS): Refactor This
+- **Shift + F6** (Cmd + F6 on macOS): Rename
+- **Ctrl + Alt + V** (Cmd + Option + V on macOS): Extract Variable
+- **Ctrl + Alt + M** (Cmd + Option + M on macOS): Extract Method
+
+### Running and Debugging
+- **Shift + F10** (Ctrl + R on macOS): Run
+- **Shift + F9** (Cmd + D on macOS): Debug
+- **F8** (Cmd + Option + Right Arrow on macOS): Step Over
+- **F7** (Cmd + Option + Down Arrow on macOS): Step Into
+- **Shift + F8** (Cmd + Shift + Option + Right Arrow on macOS): Step Out
+- **Alt + F9** (Cmd + Option + F9 on macOS): Run to Cursor
+
+### Project and Code Structure
+- **Alt + 1** (Cmd + 1 on macOS): Open Project Tool Window
+- **Ctrl + Shift + F12** (Cmd + Shift + F12 on macOS): Toggle Tool Window
+- **Ctrl + F12** (Cmd + F12 on macOS): File Structure
+- **Ctrl + H** (Cmd + H on macOS): Type Hierarchy
+- **Ctrl + Shift + H** (Cmd + Shift + H on macOS): Method Hierarchy
+- **Ctrl + Alt + H** (Cmd + Option + H on macOS): Call Hierarchy
+
+### General
+- **Ctrl + Shift + A** (Cmd + Shift + A on macOS): Find Action
+- **Alt + Enter** (Option + Enter on macOS): Show Intention Actions and Quick-Fixes
+- **F2/Shift + F2** (F2/Shift + F2 on macOS): Next/Previous Highlighted Error
+- **Ctrl + Tab** (Ctrl + Tab on macOS): Switch Between Tabs and Tool Windows
+
+These shortcuts can significantly improve productivity by making it easier to navigate, edit, and refactor code quickly and efficiently.
+
+
+
+
+
+Here's the table with dashed borders:
+
+```
+---------------------------------------------------------------------------------------
+| **Category**          | **Action**                         | **Windows/Linux**      | **macOS**              |
+---------------------------------------------------------------------------------------
+| **Basic Navigation**  | Search Everywhere                 | Double Shift           | Double Shift           |
+---------------------------------------------------------------------------------------
+|                       | Find Class                        | Ctrl + N               | Cmd + O                |
+---------------------------------------------------------------------------------------
+|                       | Find File                         | Ctrl + Shift + N       | Cmd + Shift + O        |
+---------------------------------------------------------------------------------------
+|                       | Find Symbol                       | Ctrl + Shift + Alt + N | Cmd + Shift + Alt + O  |
+---------------------------------------------------------------------------------------
+|                       | Navigate to Next/Previous Tab     | Alt + Right/Left Arrow | Ctrl + Right/Left Arrow|
+---------------------------------------------------------------------------------------
+| **Code Editing**      | Basic Code Completion             | Ctrl + Space           | Cmd + Space            |
+---------------------------------------------------------------------------------------
+|                       | Smart Code Completion             | Ctrl + Shift + Space   | Cmd + Shift + Space    |
+---------------------------------------------------------------------------------------
+|                       | Comment/Uncomment Line            | Ctrl + /               | Cmd + /                |
+---------------------------------------------------------------------------------------
+|                       | Comment/Uncomment Block           | Ctrl + Shift + /       | Cmd + Shift + /        |
+---------------------------------------------------------------------------------------
+|                       | Delete Line                       | Ctrl + Y               | Cmd + Y                |
+---------------------------------------------------------------------------------------
+|                       | Duplicate Line                    | Ctrl + D               | Cmd + D                |
+---------------------------------------------------------------------------------------
+|                       | Move Line Up/Down                 | Shift + Alt + Up/Down  | Shift + Cmd + Up/Down  |
+---------------------------------------------------------------------------------------
+| **Refactoring**       | Rename                            | Shift + F6             | Shift + F6             |
+---------------------------------------------------------------------------------------
+```

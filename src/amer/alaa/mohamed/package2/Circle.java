@@ -1,6 +1,6 @@
 package amer.alaa.mohamed.package2;
 
-public class Circle {
+public class Circle extends Shape {
     private float radius;
     private final float pi=3.14f;
     // final is a constant
