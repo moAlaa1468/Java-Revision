@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 package amer.alaa.mohamed.package1;
-import test.FirstChild;
-import test.Parent;
+
 /**
  *
  * @author moham
@@ -13,9 +12,10 @@ import test.Parent;
 public class Main {
     public static void main(String[] args){
         System.out.println("Welcome to our new project");
-        FirstChild firstchild=new FirstChild();
+        System.out.println("We are going to make This for testing uaAmer ");
     }
     //this is not the end of mohamed Alaa amer ... 
-   
+
+    //This is not the end of the files All the files
    
 }
